@@ -14,11 +14,23 @@ h3{
 .navbar-brand img{
     width: 250px;
 }
+.gulir{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.scrolled{
+    background-color: rgb(184, 184, 190);
+}
 .navbar-bawah{
     display: none;
 }
 .navbar-search{
     display: block;
+}
+.nav-link:hover::after{
+    display: block;
+    content: '';
 }
 .carousel img{
     height: 500px;
@@ -26,6 +38,9 @@ h3{
 .contents{
     text-align: center;
     margin-top: 15px;
+}
+.img-thumbnail:hover{
+    transform: scale(1.1);
 }
 .contents p{
     text-transform: uppercase;
@@ -68,6 +83,15 @@ h3{
     }
     .navbar-search{
         display: none;
+    }
+    .nav-link:hover::after{
+        display: block;
+        content: '';
+        border-bottom: 2px solid rgb(185, 194, 58);
+        padding-bottom: 3px;
+        width: 75%;
+        margin: auto;
+        margin-bottom: -5px;
     }
     .contents-iklan{
         display: block;
